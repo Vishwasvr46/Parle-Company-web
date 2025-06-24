@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="review.css">
+  <title>Review Form</title>
+  <style>
+    .home-button button {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: hsl(112, 67%, 40%);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2>Help Us Grow with a Review</h2>
+    <form id="reviewForm" action="review.php" method="post" >
+      <textarea name="opinion" id="opinion" placeholder="Your opinion..." required></textarea>
+      <div class="btn-group">
+        <button type="submit" class="btn submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <button href="index.php" onclick="window.location.href='index.php'" class="btn-back   submit">Back</button>
+</body>
+</html>
+
